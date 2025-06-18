@@ -1,9 +1,6 @@
 import pandas as pd
 import requests
 
-
-
-
 def encoding_thingsss(data):
     temp_array = list()
     temp_array1 = []
