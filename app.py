@@ -1,4 +1,5 @@
-from fastapi import FastAPI     #Annotated allows you to add extra metadata to type hints.
+from fastapi import FastAPI     
+#Annotated allows you to add extra metadata to type hints.
 from Models.predictionn import prediction_data
 from logic.encodings_logic import encoding_thingsss
 from DataValidation.PydanticFile import (User_input , temass_short_name,
@@ -21,13 +22,13 @@ def main():
         "Data" : f"Data Start from {starting_date} to {Ending_date}"
     }
 
-##Predictionn URL
+##Predictionn URL   
 @app.post("/predict_")
 def predictionss(UserInput : User_input) -> dict:
     # print("Predictionnnn Functionnn Callll-------------->>>>>>")
     if UserInput.Batting_teams == UserInput.Bowlling_teams:
         return {
-            "Warning" : "Kabhi same teams ko khelte dekhaa hai???"
+                "Warning" : "Kabhi same teams ko khelte dekhaa hai???"
             }
             
     input_validation = [
@@ -59,13 +60,12 @@ def predictionss(UserInput : User_input) -> dict:
 ##FIndd the all teamss namesss 
 @app.get("/team_list")
 def temass_listt():
+    
     return{
-
         "Teams" : list(temass_short_name.values())     
     }
 
-
-###IPL Teamsss Recordssss 
+#IPL Teamsss Recordssss 
 @app.post("/temsss_information")
 def temass_data(UserTeams : Teamsss):
     data =  Ipl_team_allrecored(UserTeams)

@@ -9,14 +9,14 @@ def encoding_thingsss(data):
 
     # if requests == 'POST':
 
-    # batting_team = request.form['batting_teams']
+    # batti ng_team = request.form['batting_teams']
     if data[0] == 'Chennai_Super_Kings':
         temp_array1 = temp_array1 + [1,0,0,0,0,0,0,0]
     elif data[0] == 'Delhi_Daredevils':
         temp_array1 = temp_array1 + [0,1,0,0,0,0,0,0]
     elif data[0] == 'Kings_XI_Punjab':
         temp_array1 = temp_array1 + [0,0,1,0,0,0,0,0]
-    elif data[0] == 'Kolkata_Knight_Riders':
+    elif data[0] == 'Kolkata_Knight_Riders':   
         temp_array1 = temp_array1 + [0,0,0,1,0,0,0,0]
     elif data[0] == 'Mumbai_Indians':
         temp_array1 = temp_array1 + [0,0,0,0,1,0,0,0]
@@ -24,7 +24,7 @@ def encoding_thingsss(data):
         temp_array1 = temp_array1 + [0,0,0,0,0,1,0,0]
     elif data[0] == 'Royal_Challengers_Bangalore':
         temp_array1 = temp_array1 + [0,0,0,0,0,0,1,0]
-    elif data[0] == 'Sunrisers_Hyderabad':
+    elif data[0] == 'Sunrisers_Hyderabad':   
         temp_array1 = temp_array1 + [0,0,0,0,0,0,0,1]
         
         
@@ -53,7 +53,7 @@ def encoding_thingsss(data):
         temp_array3 = temp_array3 + [0,1,0,0,0,0,0]
     elif data[-1] == "MA_Chidambaram_Stadium_Chepauk":
         temp_array3 = temp_array3 + [0,0,1,0,0,0,0]
-    elif data[-1] == "Mohali":
+    elif data[-1] == "Mohali": 
             temp_array3 = temp_array3 + [0,0,0,1,0,0,0]
     elif data[-1] == "Rajiv_Gandhi_International_Stadium_Uppal":
         temp_array3 = temp_array3 + [0,0,0,0,1,0,0]
