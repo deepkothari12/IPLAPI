@@ -32,10 +32,9 @@ def predictionss(UserInput : User_input) -> dict:
             }
             
     input_validation = [
-    
         UserInput.Batting_teams,
         UserInput.Bowlling_teams,
-        UserInput.Wickets,
+        UserInput.Wickets,  
         UserInput.Runns,
         UserInput.Over,
         UserInput.Last_five_overs_wickets,

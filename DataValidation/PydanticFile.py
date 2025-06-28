@@ -40,17 +40,17 @@ class User_input(BaseModel):
     @field_validator("Bowlling_teams" , mode = "before")
     @classmethod
     def convert_short_into_long_bowling(cls , names_blowling):
-        if isinstance(names_blowling , str):
+        if isinstance(names_blowling , str):    
             names_blowling_upper = names_blowling.upper()
-
-            return temass_short_name.get(names_blowling_upper , names_blowling)
+    
+            return temass_short_name.get(names_blowling_upper, names_blowling)
         
         
     @field_validator("Ground")
     @classmethod
     def ground_perfection(cls , Ground_name) -> str:
         return Ground_name.replace(" " , "_")
-
+    
     @field_validator("Bowlling_teams")
     @classmethod
     def bowling_team_perfection(cls , bowlingg_team_name) -> str:

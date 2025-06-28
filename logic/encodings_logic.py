@@ -7,7 +7,7 @@ def encoding_thingsss(data):
     temp_array2 = []
     temp_array3 = []
 
-    # if requests == 'POST':
+    # if requests == 'POST':    
 
     # batti ng_team = request.form['batting_teams']
     if data[0] == 'Chennai_Super_Kings':
@@ -79,3 +79,6 @@ def encoding_thingsss(data):
         all_array =  temp_array +  [ overs ,runs , wickets , Last_5_over_wickets] + temp_array3     
         
         return all_array       
+
+
+    
